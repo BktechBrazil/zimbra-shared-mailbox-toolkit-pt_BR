@@ -36,9 +36,9 @@ ZaShareToolkitTab = function(parent, entry) {
     resp = ZaRequestMgr.invoke(csfeParams, reqMgrParams);
 
     document.getElementById('ztab__SHARE_TOOLKIT').innerHTML = '<div style="padding-left:10px"><h1>Gerenciar compartilhamentos</h1>' +
-    '<h2>Criar e remover compartilhamentos</h2>Essa opção permite que você compartilhe caixas postais. Útil para caixas corporativas e de equipes.<br><br><select id="ShareToolkit-action" onchange="this.value==\'createShare\' ? document.getElementById(\'ShareToolkit-withfrom\').innerHTML = \'with\' : document.getElementById(\'ShareToolkit-withfrom\').innerHTML = \'from\'" ><option value="createShare">Compartilhar</option><option value="removeShare">Revogar</option></select> a conta <input type="text" id="ShareToolkit-account-a" list="ShareToolkit-datalist" placeholder="user@domain.com">&nbsp;<span id="ShareToolkit-withfrom">com</span>:&nbsp;<input type="text" id="ShareToolkit-account-b" list="ShareToolkit-datalist" placeholder="other-user@domain.com"><datalist id="ShareToolkit-datalist"></datalist>&nbsp;&nbsp;<button id="ShareToolkit-btnCreateShare">OK</button>' +
+    '<h2>Criar e remover compartilhamentos</h2>Essa opcao permite que voce compartilhe caixas postais. Util para caixas corporativas e de equipes.<br><br><select id="ShareToolkit-action" onchange="this.value==\'createShare\' ? document.getElementById(\'ShareToolkit-withfrom\').innerHTML = \'with\' : document.getElementById(\'ShareToolkit-withfrom\').innerHTML = \'from\'" ><option value="createShare">Compartilhar</option><option value="removeShare">Revogar</option></select> a conta <input type="text" id="ShareToolkit-account-a" list="ShareToolkit-datalist" placeholder="user@domain.com">&nbsp;<span id="ShareToolkit-withfrom">com</span>:&nbsp;<input type="text" id="ShareToolkit-account-b" list="ShareToolkit-datalist" placeholder="other-user@domain.com"><datalist id="ShareToolkit-datalist"></datalist>&nbsp;&nbsp;<button id="ShareToolkit-btnCreateShare">OK</button>' +
     '<br><br><hr>' +
-    '<h2>Criar personagens</h2>Essa opção permite que vocÊ crie os personagens para todos os nomes alternativos da conta.<br><br><input type="text" id="ShareToolkit-account-c" list="ShareToolkit-datalist" placeholder="user@domain.com">&nbsp;&nbsp;<button id="ShareToolkit-btnPersonaGen">OK</button>' +
+    '<h2>Criar personagens</h2>Essa opcao permite que voce crie os personagens para todos os nomes alternativos da conta.<br><br><input type="text" id="ShareToolkit-account-c" list="ShareToolkit-datalist" placeholder="user@domain.com">&nbsp;&nbsp;<button id="ShareToolkit-btnPersonaGen">OK</button>' +
     '<br><br><hr>' +
     '<h2>Status</h2><div id="ShareToolkit-status" style="color:#aaaaaa; font-style: italic;"></div></div>';   
     
@@ -110,7 +110,7 @@ ZaShareToolkitTab.prototype.btnCreateRemoveShare = function () {
     }   
     else
     {
-       ZaShareToolkitTab.prototype.status('Utilize dois endereços de e-mail diferentes.');
+       ZaShareToolkitTab.prototype.status('Utilize dois enderecos de email diferentes.');
     }
 }   
 
@@ -133,7 +133,7 @@ ZaShareToolkitTab.prototype.btnPersonaGen = function () {
     }   
     else
     {
-       ZaShareToolkitTab.prototype.status('Selecione ou digite o endereço de e-mail.');
+       ZaShareToolkitTab.prototype.status('Selecione ou digite o endereco de email.');
     }
 }   
   
